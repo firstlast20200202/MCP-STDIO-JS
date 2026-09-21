@@ -178,10 +178,10 @@ server.registerTool(
 async function main() {
     const transport = new StdioServerTransport();
     await server.connect(transport);
-    console.error("Basic MCP Server running on stdio");
+    //console.error("Basic MCP Server running on stdio");
 }
 
 main().catch((error) => {
-    console.error("Server error:", error);
+    //console.error("Server error:", error);
     process.exit(1);
 });
